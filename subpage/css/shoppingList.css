@@ -1,0 +1,193 @@
+/* 基础样式 */
+a {
+	text-decoration: none;
+	color: black;
+}
+
+a:hover {
+	color: #2cb3ba;
+	text-decoration: none;
+}
+
+.blue{
+	color: #54beea;
+}
+tr:hover{
+	background-color:#e5ebee;
+}
+/* 头部 start */
+.header {
+	height: 50px;
+	width: 100%;
+	background-color: #edf6fa;
+	font-size: 14px;
+}
+
+.header-left {
+	height: 50px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.header-left li {
+	margin-left: 10px;
+}
+
+.header-left li:first-child {
+	font-weight: 600;
+}
+
+.header-right {
+	display: flex;
+	height: 50px;
+	width: 260px;
+	display: flex;
+	align-items: center;
+}
+
+/* 头部 end */
+/* 顶部搜索栏 start */
+.search {
+	height: 50px;
+	width: 100%;
+}
+
+.search-left {
+	height: 50px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.search-left li {
+	margin-left: 15px;
+}
+
+.search .search-left .select {
+	width: 100px;
+	height: 40px;
+	text-indent: 10px;
+	border-radius: 5px;
+}
+.search .search-left>li:nth-child(2) input{
+	width: 200px;
+	height: 40px;
+	text-indent: 10px;
+	border-radius: 5px;
+	border: #c7d0d4 solid 1px;
+}
+.search .search-left>li:nth-child(3) input{
+	width: 100px;
+	height: 40px;
+	/* text-indent: 10px; */
+	border-radius: 5px;
+	background-color: #3893c7;
+	cursor: pointer;
+}
+
+.seaech-right{
+	height: 50px;
+	width: 430px;
+	display: flex;
+	align-items: center;
+}
+
+.seaech-right>li{
+	width: 75px;
+	height: 40px;
+	margin-right: 10px;
+	background-color: #f0f5f7;
+	border-radius: 5px;
+	cursor: pointer;
+	
+}
+.seaech-right>li>div:first-child{
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 20px;
+	height: 20px;
+}
+.seaech-right>li>div:first-child>img{
+	width: 100%;
+	height: 100%;
+}
+.seaech-right>li>div:last-child{
+	margin-top: 10px;
+	margin-left: 5px;
+}
+/* 顶部搜索栏 end */
+/* 主内容区 start */
+.shopinglist{
+	margin-top: 10px;
+	margin-left: 5px;
+	margin-right: 5px;
+	width: 100%;
+	border: 1px solid #ccc;
+}
+.shopinglist>thead>tr{
+	height: 40px;
+}
+.shopinglist>thead>tr>td{
+	
+}
+.shopinglist tr td{
+	padding-left: 10px;
+}
+.shopinglist a {
+	text-decoration: none;
+	color: #3f8fc0;
+}
+
+.shopinglist a:hover {
+	color: #2cb3ba;
+	text-decoration: none;
+}
+.shopinglist thead tr:first-child{
+	background-color: #f0f5f7;
+	border-bottom: 1px solid #ccc;
+	
+}
+.shopinglist thead tr:first-child th{
+	border: none;
+	text-align: left;
+	text-indent: 10px;
+}
+.shopinglist tbody tr:nth-child(even){
+	background-color: #f5f8fa;
+}
+
+.shopinglist tbody tr td{
+	border: none;
+	border-right: 1px dashed #ccc;
+}
+/* 主内容区 end */
+
+/* 页脚 start */
+.footer{
+	margin-top: 10px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.footer>div:first-child{
+	margin-left: 20px;
+}
+
+.page-list{
+	display: flex;
+	width: 400px;
+	height: 40px;
+}
+.page-list li{
+	width: 40px;
+	border: #ccc solid 1px;
+	text-align: center;
+}
+.page-list li:not(:last-child){
+	border-right: none;
+}
+.page-list li:hover{
+	background-color:#f5f5f5;
+}
+/* 页脚 end */

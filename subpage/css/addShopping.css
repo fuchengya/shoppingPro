@@ -1,0 +1,85 @@
+/* body{
+	background-color: antiquewhite;
+} */
+
+/* 头部 start */
+.header {
+	height: 50px;
+	width: 100%;
+	background-color: #edf6fa;
+	font-size: 14px;
+}
+
+.header-left {
+	height: 50px;
+	width: 300px;
+	display: flex;
+	align-items: center;
+}
+
+.header-left li {
+	margin-left: 10px;
+}
+
+.header-left li:first-child {
+	font-weight: 600;
+}
+
+/* 头部 end */
+
+/* 主内容 start */
+.form-container{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.form-container>form>div{
+	margin-top: 20px;
+}
+.form-container>form>div>label{
+	font-size: 18px;
+}
+.form-container>form>div>input{
+	margin-left: 20px;
+	height: 30px;
+	border: #ccc solid 1px;
+}
+#thumbnail {
+	border: none ;
+	margin-left: 5px;
+}
+#category{
+	margin-left: 20px;
+	height: 30px;
+	width: 80px;
+	text-indent: 15px;
+	border: #ccc solid 1px;
+}
+#isApproved{
+	margin-left: 20px;
+	height: 30px;
+	width: 80px;
+	text-indent: 12px;
+	border: #ccc solid 1px;
+}
+#productName{
+	text-indent: 10px;
+	width: 500px;
+}
+
+#description{
+	margin-left: 20px;
+	width: 500px;
+	height: 120px;
+}
+
+#release{
+	margin-left: 92px;
+	height: 40px;
+	width: 160px;
+	background-color: #3c95c8;
+	color: white;
+	font-weight: 600;
+	margin-top: 20px;
+	border-radius: 10px;
+}
+/* 主内容 end */

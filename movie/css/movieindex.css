@@ -1,0 +1,425 @@
+.search{
+  float: right;
+  margin-right: 300px;
+  margin-top: 5px;
+  border-radius: 30px;
+  height: 30px;
+  width: 250px;
+  padding: 0 40px 0 20px;
+  border: 1px solid #ccc;
+
+}
+
+.submit{
+ display: block;
+ width: 35px;
+ height: 35px;
+ border-radius: 30px;
+ border: 1px solid white;
+ background-image: url(../images/search.png);
+ background-color: #ef4238;
+ position: absolute;
+ right: 301px;
+ top: 3px;
+ cursor: pointer;
+}
+
+/* 顶部-end */
+
+.main{
+  display: flex;
+  width: 1200px;
+  margin-top: 20px;
+  
+}
+.main h1{
+  color: #ef4238;
+  font-weight: 400;
+  float: left;
+}
+
+.panel-head{
+  height: 26px;
+  line-height: 26px; 
+}
+
+.more{
+  float: right;
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 5px;
+  margin-right: 10px;
+  color: #ef4238;
+}
+
+.left{
+  width: 800px;
+  margin-right: 10px;
+  
+}
+
+.right{
+  width: 400px;
+  padding-left: 20px;
+}
+
+.panel-content{
+  margin-top: 20px;
+}
+.panel-content .item {
+  position: relative;
+  border: 1px solid #ccc;
+  width: 160px;
+  clear: both; 
+  
+}
+
+.panel-content .item:hover{
+  box-shadow: #ccc 0px 10px 10px;
+}
+
+.panel-content .item .info{
+  position: absolute;
+  bottom: 35px;
+  width: 100%;
+}
+
+.panel-content .item .info span:nth-child(1){
+  color: white;
+  font-size: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+  margin-left: 10px;
+}
+
+.panel-content .item .info span:nth-child(2){
+  float: right;
+  color: #ffb400;
+  margin-right: 10px;
+  font-size: 20px;
+}
+.panel-content .item .detail{
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.panel-content .item .detail a{
+  color: #ef4238;
+  font-size: 14px;
+  text-align: center;
+  display: block;
+}
+.panel-content .item .detail a:hover{
+  background-color: #ef4238;
+  color: white;
+}
+
+.panel-content ul li{
+  float: left;
+  margin: 20px 0 30px 30px;
+}
+
+.panel-content img{
+  width: 160px;
+  height: 220px;
+  
+}
+
+.panel{
+  width: 800px;
+  margin-bottom: 30px;
+  clear: both;
+}
+/* 正在热映-end */
+
+
+/* 即将上映 */
+.panel-content .shangying{
+  height: 295px;
+}
+
+.panel-content .shangying ul li{
+  display: inline-block;
+  margin: 30px 0 30px 30px;
+}
+
+.panel-content .shangying .detail{
+  height: 70px; 
+}
+
+.panel-content .shangying .detail span{
+  display: inline-block;
+  font-size: 14px;
+  background-color: #fbfbfb;
+  color:#ffb400;
+  text-align: left;
+  padding-left: 10px;
+  height: 35px;
+  line-height: 35px;
+}
+
+.panel-content .shangying .info{
+  position: absolute;
+  bottom: 90px;
+}
+
+.panel-content .shangying .detail a{
+  color: #ccc;
+  width: 50%;
+  float: left; 
+  height: 35px;
+  box-sizing: border-box;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+.panel-content .shangying .detail .yus{
+  border-left: 1px solid #ccc;
+  color:#2d98f3;
+}
+
+.panel-content .shangying .detail .yus:hover{
+  background-color: #2d98f3;
+  color: white;
+}
+
+.panel-content .time{
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  font-size: 14px;
+  color: #ccc;
+  text-align: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+
+/* 热播电影 */
+.rebo{
+  display: flex;
+  justify-content: space-between;
+  content: '';
+  margin-top: 30px;
+  height: 30px;
+  margin-bottom: 60px;
+}
+
+.rebo ul li{
+  float: left;
+  margin-right: 20px;
+  margin-top: 35px;
+  font-size: 14px;
+}
+
+.rebo ul li:nth-child(n+2){
+  margin-top: 40px;
+}
+
+.more-rebo{
+  font-size: 14px;
+  line-height: 16px;
+  margin-top: 43px;
+  margin-right: 10px;
+  color: #ef4238;
+}
+
+.rebocontent .item .da{
+  width:350px ;
+}
+
+.rebocontent ul li:nth-child(1){
+  margin-right: 200px;
+}
+
+.rebocontent .info{
+  position: absolute;
+  top: 180px;
+}
+
+.rebocontent .item{
+  border: none;
+  box-shadow: none;
+}
+
+.rebocontent .item:hover{
+  box-shadow: none;
+}
+
+
+/* 右半部分-start */
+
+.BoxOffice .dis{
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  overflow: hidden;
+}
+
+.BoxOffice .dis:hover{
+  background-color: rgb(0, 0, 0,0.05);
+}
+
+.BoxOffice .dis span:nth-child(1){
+  font-size: 16px;
+}
+
+
+.BoxOffice .dis span i{
+  font-size: 18px;
+  color: #999;
+  margin-right: 10px;
+}
+
+.BoxOffice .dis .red{
+  color: #ef4238;
+}
+
+
+.BoxOffice .dis span:nth-child(2){
+  color: #ef4238;
+  font-size: 16px;
+}
+
+/* 图片隐藏 */
+.BoxOffice .hid{
+  display: none;
+  height: 110px;
+}
+
+.BoxOffice .hid img{
+  float: left;
+  height: 100px;
+  width: 100px;
+}
+
+.BoxOffice .hid p{
+ font-size: 14px;
+ text-indent: 2em;
+ width: 250px;
+ float: right;
+ line-height: 18px;
+ margin-top: 5px;
+ margin-right: 10px;
+}
+/* 票房-end */
+
+
+.market h3{
+  float: left;
+  width: 20px;
+  height: 83px;
+  padding: 10px;
+  color: #fff;
+  background-color: #ef4238;
+  text-align: center;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  
+}
+
+.market{
+  margin: 30px 0 30px 0;
+  background-color: #fbfbfb;
+  border: 1px solid #efefef; 
+  width: 390px;
+  height: 105px;
+}
+
+.market .market-hd{
+  display: flex;
+  justify-content: space-between;
+}
+
+.market .market-hd span{
+ margin-top: 20px;
+ margin-left: 10px;
+}
+
+.market .market-hd span p{
+  color: #ef4238;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.market .market-hd span a{
+  margin-top: 10px;
+}
+
+#bj-time{
+  color: #999;
+  font-size: 18px;
+  display: block;
+  margin-left: 60px;
+  margin-top: 5px;
+  color: #ef4238;
+  font-style: italic ;
+}
+
+#bj-time::before{
+  content: '北京时间';
+  margin-right: 5px;
+  color: #999;
+}
+
+/* 影人-start */
+.ShadowMan{
+  width: 390px;
+  margin-top: 30px;
+}
+
+.ShadowMan h1{
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.manlist ul li{
+  margin-top: 50px;
+  width: 390px;
+  font-size: 14px;
+}
+
+.manlist ul li i{
+  margin-right: 10px;
+  font-size: 15px;
+}
+
+.manlist{
+  margin-left: 30px;
+}
+
+.thumb{
+  margin-top: 40px;
+  display: block;
+  position: relative;
+}
+.thumb span{
+  position: absolute;
+  top:80px;
+  left: 150px;
+}
+.thumb a i{
+  position: absolute;
+  left: 0;
+  bottom: 3px;
+  color: #fff;
+  background-color: #ef4238;
+  width: 18px;
+  height: 18px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.red{
+  color: #ef4238;
+}
+
+
+
+

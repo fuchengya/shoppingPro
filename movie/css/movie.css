@@ -1,0 +1,164 @@
+.search{
+  float: right;
+  margin-right: 300px;
+  margin-top: 3px;
+  border-radius: 30px;
+  height: 30px;
+  width: 250px;
+  padding: 0 40px 0 20px;
+  border: 1px solid #ccc;
+
+}
+
+.submit{
+ display: block;
+ width: 35px;
+ height: 35px;
+ border-radius: 30px;
+ border: 1px solid white;
+ background-image: url(../images/search.png);
+ background-color: #ef4238;
+ position: absolute;
+ right: 298px;
+ top: 3px;
+ cursor: pointer;
+}
+
+
+/* 主体部分-start */
+
+.main{
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.main .classify{
+  width: 100%;
+  height: 240px;
+  border: 1px solid #e5e5e5;
+  padding: 0 20px;
+}
+
+.main .classify ul .classifylist{
+  border-bottom: 1px solid #e5e5e5;
+  display: list-item;
+  text-align: -webkit-match-parent;
+  padding: 10px 0;
+  height: 60px;
+}
+
+
+.main .classify p{
+  float: left;
+  height: 24px;
+  line-height: 24px;
+  color: #999;
+  font-size: 14px;
+}
+
+.classify .tags li{
+ float: left;
+ margin-left: 42px;
+ color: #333;
+ font-size: 14px;
+ height: 30px;
+ line-height: 30px;
+}
+.classify .tags li:nth-child(1){
+  margin-left: 0;
+}
+
+.red {
+  width: 45px;
+  height: 27px;
+  background-color: #ef4238;
+  text-align: center;
+  border-radius: 45em;
+}
+
+.red span{
+  color: white;
+  line-height: 27px;
+}
+/* 电影分类部分-end */
+
+
+.dis{
+  margin-top: 30px;
+  width: 1200px;
+  height: 100%;
+}
+
+input {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #999;
+  transition: 0.1s all linear;
+  margin-right: 3px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 5px solid #ef4238;
+}
+
+label {
+  margin-right: 15px;
+  line-height: 32px;
+  font-size: 14px;
+}
+
+.sort{
+  width: 1200px;
+}
+
+/* 电影排版-start */
+.movie{
+  width: 1200px;
+  margin: 20px 0 20px -25px
+}
+
+.movie .item{
+  margin-bottom: 20px;
+}
+
+.movie ul li{
+  float: left;
+  margin-left: 30px;
+}
+
+.poster{
+  width: 160px;
+  height: 220px;
+  transition: transform 0.5s ease;
+}
+
+.poster:hover{
+  transform: scale(1.3);
+}
+
+.detil{
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.detil a{
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.detil span{
+  color: #ffb400;
+  font-size: 24px;
+  text-align: center;
+}

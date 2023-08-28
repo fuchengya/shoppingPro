@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>后台管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/management.css" />
+	</head>
+	<body class="">
+		<!-- 头部导航栏 start -->
+		<div class="header clearfix">
+			<div class="logo leftfix">
+				<img src="./img/images/logo.png" alt="">
+			</div>
+			<ul class="nav leftfix">
+				<li>
+					<div>
+						<img src="./img/images/globe.png" alt="">
+						<a href="./index.html">网站前台</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="./img/images/home.png" alt="">
+						<a href="">后台首页</a>
+					</div>
+				</li>
+				<li >
+					<div>
+						<img src="./img/images/shop.png" alt="">
+						<a href="#" onclick="showIframe(2)">添加商品</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="./img/images/movie.png" alt="">
+						<a href="#" onclick="showIframe(3)">添加影视</a>
+					</div>
+				</li>
+				<li>
+					<div>
+						<img src="./img/images/food.png" alt="">
+						<a href="#" onclick="showIframe(4)">添加餐饮</a>
+					</div>
+				</li>
+			</ul>
+			<div class="about rightfix">
+				<div>
+					<img src="./img/images/help.png" alt="">
+					<a href="#"> 帮助</a>
+					<a href="#">关于</a>
+					<a href="login.html">退出</a>
+				</div>
+				<div>
+					<img src="./img/images/user.png" alt="">
+					<span>用户未登录</span>
+					<span>消息</span>
+					<span class="number" style="background-color: red; width: 20px;">5</span>
+				</div>
+			</div>
+		</div>
+		<!-- 头部导航栏 end -->
+		<!-- 主内容区 start -->
+		<div class="main">
+			<!-- 侧边功能菜单 start -->
+			<ul class="sideMenu">
+				<li class="clearfix">
+					<div class="leftfix">
+						<img src="./img/images/leftico.png" alt="">
+					</div>
+					<div class="leftfix">
+						功能菜单
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico05.png" alt="">
+					</div>
+					<div class="leftfix">
+						购物后台管理
+					</div>
+				</li>
+				<li onclick="showIframe(2)" style="cursor: pointer;">
+					<div class="leftfix">
+						<img src="./img/images/list.gif" alt="">
+					</div>
+					<div class="leftfix" >
+						添加商品
+					</div>
+				</li>
+				<li style="cursor: pointer;" onclick="showIframe(1)">
+					<div class="leftfix" >
+						<img src="./img/images/list1.gif" alt="">
+					</div>
+					<div class="leftfix"  >
+						商品列表
+					</div>
+					<div class="rightfix" style="margin-top: 15px;">
+						<img src="./img/images/sj.png" alt="">
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/list.gif" alt="">
+					</div>
+					<div class="leftfix">
+						商品类型
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico02.png" alt="">
+					</div>
+					<div class="leftfix">
+						影视后台管理
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico05.png" alt="">
+					</div>
+					<div class="leftfix">
+						餐饮后台管理
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico04.png" alt="">
+					</div>
+					<div class="leftfix">
+						订单管理
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico04.png" alt="">
+					</div>
+					<div class="leftfix">
+						交易记录
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico06.png" alt="">
+					</div>
+					<div class="leftfix">
+						统计报表
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico04.png" alt="">
+					</div>
+					<div class="leftfix">
+						权限分配
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico08.png" alt="">
+					</div>
+					<div class="leftfix">
+						修改密码
+					</div>
+				</li>
+				<li>
+					<div class="leftfix">
+						<img src="./img/images/leftico07.png" alt="">
+					</div>
+					<div class="leftfix">
+						系统设置
+					</div>
+				</li>
+			</ul>
+			<!-- 侧边功能菜单 end -->
+			<!-- 插入子页面 -->
+			<iframe src="./subpage/shoppingList.html" class="iframe" id="iframe1" frameborder="0" width='100%' height="750" scrolling="no"></iframe>
+			<iframe src="./subpage/addShopping.html" class="iframe" style="display: none;" id="iframe2" frameborder="0" width='100%' height="750" scrolling="no"></iframe>
+			<iframe src="./subpage/addMovie.html" class="iframe" style="display: none;" id="iframe3" frameborder="0" width='100%' height="750" scrolling="no"></iframe>
+			<iframe src="./subpage/addFood.html" class="iframe" style="display: none;" id="iframe4" frameborder="0" width='100%' height="750" scrolling="no"></iframe>
+		</div>
+		<!-- 主内容区 end -->
+		<script type="text/javascript">
+			function showIframe(index) {
+				const iframes = document.querySelectorAll('.iframe');
+				iframes.forEach(iframe => iframe.style.display = 'none');
+
+				const selectedIframe = document.querySelector(`#iframe${index}`);
+				if (selectedIframe) {
+					selectedIframe.style.display = 'block';
+				}
+			}
+		</script>
+	</body>
+</html>

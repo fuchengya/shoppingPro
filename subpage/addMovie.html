@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加影片</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/addMovie.css">
+	</head>
+	<body>
+		<!-- 头部 start -->
+		<div class="header clearfix">
+			<ul class="header-left leftfix">
+				<li>位置：</li>
+				<li><a href="#">首页</a></li>
+				<li><img src="../img/images/rlist.gif" alt=""></li>
+				<li><a href="#">添加影片</a></li>
+			</ul>
+		</div>
+		<!-- 头部 end -->
+		<!-- 主要内容 start -->
+		<div class="form-container">
+			<form>
+				<div>
+					<label for="thumbnail">影片缩略图</label>
+					<input type="file" id="thumbnail" name="thumbnail">
+				</div>
+				<div>
+					<label for="movieName">影片名称</label>
+					<input type="text" id="movieName" name="movieName" placeholder="请填写影片名称">
+				</div>
+				<div>
+					<label for="category">影片类别</label>
+					<select id="category" name="category">
+						<option value="爱情">爱情</option>
+						<option value="喜剧">喜剧</option>
+						<option value="动作">动作</option>
+						<option value="恐怖">恐怖</option>
+						<option value="伦理">伦理</option>
+						<option value="悬疑">悬疑</option>
+						<option value="科幻">科幻</option>
+						<option value="其他">其他</option>
+					</select>
+				</div>
+				<div>
+					<label for="director">导演</label>
+					<input type="text" id="director" name="director">
+				</div>
+				<div>
+					<label for="cast">主演</label>
+					<input type="text" id="cast" name="cast">
+				</div>
+				<div>
+					<label for="releaseDate">发布日期</label>
+					<input type="date" id="releaseDate" name="releaseDate">
+				</div>
+				<div>
+					<label for="isApproved">是否审核</label>
+					<select id="isApproved" name="isApproved">
+						<option value="yes">已审核</option>
+						<option value="no">未审核</option>
+					</select>
+				</div>
+				<div style="display: flex;">
+					<label for="description">影片简介</label>
+					<textarea id="description" name="description" rows="4"></textarea>
+				</div>
+				<button type="submit" id="release">马上发布</button>
+			</form>
+		</div>
+	</body>

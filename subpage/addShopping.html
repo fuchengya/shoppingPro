@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/addShopping.css">
+	</head>
+	<body>
+		<!-- 头部 start -->
+		<div class="header clearfix">
+			<ul class="header-left leftfix">
+				<li>位置：</li>
+				<li><a href="#">首页</a></li>
+				<li><img src="../img/images/rlist.gif" alt=""></li>
+				<li><a href="#">添加商品</a></li>
+			</ul>
+		</div>
+		<!-- 头部 end -->
+		<!-- 主要内容 start -->
+		<div class="form-container">
+			<form>
+				<div>
+					<label for="thumbnail">商品缩略图</label>
+					<input type="file" id="thumbnail" name="thumbnail">
+				</div>
+				<div>
+					<label for="productName">商品名称</label>
+					<input type="text" id="productName" name="productName" placeholder="请填写商品名称">
+				</div>
+				<div>
+					<label for="category">商品类别</label>
+					<select id="category" name="category">
+						<option value="category1">男装</option>
+						<option value="category2">女装</option>
+						<option value="category3">童装</option>
+						<option value="category3">运动</option>
+						<option value="category3">其他</option>
+						<!-- 添加其他商品类别选项 -->
+					</select>
+				</div>
+				<div>
+					<label for="price">商品单价</label>
+					<input type="number" id="price" name="price">
+					元
+				</div>
+				<div>
+					<label for="groupPrice">团购价&nbsp;&nbsp;&nbsp;&nbsp;</label><input type="number" id="groupPrice"
+						name="groupPrice">
+					元
+				</div>
+				<div>
+					<label for="quantity">商品数量</label>
+					<input type="number" id="quantity" name="quantity">
+					件
+				</div>
+				<div>
+					<label for="publishDate">发布日期</label>
+					<input type="date" id="publishDate" name="publishDate">
+				</div>
+				<div>
+					<label for="isApproved">是否审核</label>
+					<select id="isApproved" name="isApproved">
+						<option value="yes">已审核</option>
+						<option value="no">未审核</option>
+					</select>
+				</div>
+				<div style="display: flex;">
+					<label for="description">商品描述</label>
+					<textarea id="description" name="description" rows="4"></textarea>
+				</div>
+				<button type="submit" id="release">马上发布</button>
+			</form>
+		</div>
+	</body>
+</html>

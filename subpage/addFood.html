@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>添加美食</title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/addFood.css">
+	</head>
+	<body>
+		<!-- 头部 start -->
+		<div class="header clearfix">
+			<ul class="header-left leftfix">
+				<li>位置：</li>
+				<li><a href="#">首页</a></li>
+				<li><img src="../img/images/rlist.gif" alt=""></li>
+				<li><a href="#">添加美食</a></li>
+			</ul>
+		</div>
+		<!-- 头部 end -->
+		<!-- 主要内容 start -->
+		<div class="form-container">
+			<form>
+				<div>
+					<label for="thumbnail">美食缩略图</label>
+					<input type="file" id="thumbnail" name="thumbnail">
+				</div>
+				<div>
+					<label for="foodName">美食名称</label>
+					<input type="text" id="foodName" name="foodName" placeholder="请填写美食名称">
+				</div>
+				<div>
+					<label for="category">美食类别</label>
+					<select id="category" name="category">
+						
+						<option value="">-选择美食类别-</option>
+						<option value="自助餐" selected>自助餐</option>
+						<option value="火锅">火锅</option>
+						<option value="西餐">西餐</option>
+						<option value="川菜">川菜</option>
+						<option value="湘菜">湘菜</option>
+					</select>
+					<select id="subCategory" name="subCategory">
+						
+						<option value="">-选择子类别-</option>
+						<option value="中式美食" selected>中式美食</option>
+						<option value="法式西餐">法式西餐</option>
+						<option value="英式西餐">英式西餐</option>
+						<option value="美食菜肴">美式菜肴</option>
+					</select>
+				</div>
+				<div>
+					<label for="regularPrice">门店价</label>
+					<input type="number" id="regularPrice" name="regularPrice">
+					元
+				</div>
+				<div>
+					<label for="groupPrice">团购价</label>
+					<input type="number" id="groupPrice" name="groupPrice">
+					元
+				</div>
+				<div>
+					<label for="publishDate">发布日期</label>
+					<input type="date" id="publishDate" name="publishDate">
+				</div>
+				<div>
+					<label for="isApproved">是否审核</label>
+					<select id="isApproved" name="isApproved">
+						<option value="yes">已审核</option>
+						<option value="no">未审核</option>
+					</select>
+				</div>
+				<div style="display: flex;">
+					<label for="description">美食描述</label>
+					<textarea id="description" name="description" rows="4"></textarea>
+				</div>
+				<button type="submit" id="release">马上发布</button>
+			</form>
+		</div>
+	</body>
+</html>

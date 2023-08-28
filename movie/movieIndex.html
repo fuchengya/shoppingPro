@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>电影首页</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/movieindex.css" rel="stylesheet" type="text/css"> 
+</head>
+<body onload="displayBeijingTime()">
+  <!-- 顶部区域 -->
+  <div class="top_bg">
+    <div class="top_content">
+      <div class="floatl"><img src="images/star.jpg">收藏 | HI，欢迎来订购 ！<a href="../login.html" class="orange">[请登录]</a> <a href="../register.html"  class="orange"> [免费注册]</a></div>
+      <div class="floatr">客户服务<img src="images/arrow.gif">&nbsp;网站导航<img src="images/arrow.gif">&nbsp;
+        <div class="xl"><span class="droparrow"><span class="shopcart"></span>我的购物车<span class="orange">0</span>件<img src="images/arrow.gif"/></span> 
+          <!--下拉菜单-->
+          <div class="dropdown"> 
+            <!--<div class="gwc"></div><h3>购物车为空，现在去挑选几件商品</h3></div>-->
+            <ul class="food_pic">
+              <li><a href="#"><img src="images/ms2.jpg" title="土大力休闲餐厅"/></a>
+                <p>1份<a href="#"><span class="orange floatr">删除</span></a></p>
+              </li>
+              <li><a href="#"><img src="images/ms3.jpg" title="味为先豆腐脑"/></a>
+                <p>2份<a href="#"><span class="orange floatr">删除</span></a></p>
+              </li>
+              <li><a href="#"><img src="images/ms4.jpg" title="望湘园"/></a>
+                <p>1份<a href="#"><span class="orange floatr">删除</span></a></p>
+              </li>
+              <li><a href="#"><img src="images/ms6.jpg" title="赛百味"/></a>
+                <p>1份<a href="#"><span class="orange floatr">删除</span></a></p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="logo"><a href="../index.html"><img src="images/logo.jpg" ></a><img src="images/banner.jpg" ></div>
+
+  <!-- 菜单导航 -->
+  <div class="nav_bg">
+    <div class="nav_content">
+      <ul class="nav">
+        <li class="nav_active"><a href="">首页</a></li>
+        <li ><a href="movie.html" class="white">电影</a></li>
+        <li><a href="movielist.html" class="white">排行榜</a></li>
+        <li><a href="" class="white">热点</a></li>
+        <li><a href="" class="white">商城</a></li>
+      </ul>
+    </div>
+    <input type="search" class="search" placeholder="找影视剧、影人、影院">
+    <input class="submit" type="submit" value="">
+  </div>
+ 
+
+  <!-- 主体部分 -->
+  <div class="main">
+      <div class="left">
+
+       <div class="panel">
+        <div class="panel-head">
+          <h1>正在热映(43部)</h1>
+          <span class="more">全部 ＞</span>
+        </div>
+
+        <div class="panel-content">
+            <ul>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/m1.jpg">
+                    <div class="info">
+                      <span>封神第一部</span>
+                      <span>9.4</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/m2.jpg">
+                    <div class="info">
+                      <span>孤注一掷</span>
+                      <span>9.2</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/m4.jpg">
+                    <div class="info">
+                      <span>热烈</span>
+                      <span>9.4</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/m3.jpg">
+                    <div class="info">
+                      <span>八角笼中</span>
+                      <span>9.5</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/m5.jpg">
+                    <div class="info">
+                      <span>长安三万里</span>
+                      <span>9.4</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/m6.jpg">
+                    <div class="info">
+                      <span>巨齿鲨2：深渊</span>
+                      <span>9.0</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/mo8.jpg">
+                    <div class="info">
+                      <span>八角笼中</span>
+                      <span>9.5</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="item">
+                  <div class="poster">
+                    <img src="./images/mo7.jpg">
+                    <div class="info">
+                      <span>八角笼中</span>
+                      <span>9.5</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <a>购票</a>
+                  </div>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+
+    <!-- 即将上映 -->
+      <div class="panel">
+        <div class="panel-head">
+          <h1>即将上映(121部)</h1>
+          <span class="more">全部 ＞</span>
+        </div>
+
+        <div class="panel-content">
+            <ul>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/movie/m1.jpg">
+                    <div class="info">
+                      <span>我经过风暴</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>2143434想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月17上映</span>
+                </div>
+                
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/movie/m2.jpg">
+                    <div class="info">
+                      <span>暗杀风暴</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>21412334想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月18上映</span>
+                </div>
+                
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/movie/m3.jpg">
+                    <div class="info">
+                      <span>学爸</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>214666想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月18上映</span>
+                </div>
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/movie/m4.jpg">
+                    <div class="info">
+                      <span>奇迹少女</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>2986544想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月18上映</span>
+                </div>
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/movie/m5.jpg">
+                    <div class="info">
+                      <span>雪域少年</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>567322想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月19上映</span>
+                </div>
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/m1.jpg">
+                    <div class="info">
+                      <span>封神第一部</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>2143434想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月17上映</span>
+                </div>
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/m1.jpg">
+                    <div class="info">
+                      <span>封神第一部</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>2143434想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月17上映</span>
+                </div>
+              </li>
+              <li>
+                <div class="item shangying">
+                  <div class="poster">
+                    <img src="./images/m1.jpg">
+                    <div class="info">
+                      <span>封神第一部</span>
+                    </div>   
+                  </div>
+                  <div class="detail">
+                    <span>2143434想看</span>
+                    <a>预告片</a>
+                    <a class="yus">预售</a>
+                  </div>
+                  <span class="time">8月17上映</span>
+                </div>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+
+<!-- 热播电影-start -->
+      <div class="panel">
+        <div class="panel-head rebo"> 
+          <ul>
+            <li><h1>热播电影</h1></li>
+            <li>爱情</li>
+            <li>喜剧</li>
+            <li>动作</li>
+            <li>恐怖</li>
+            <li>动画</li>
+          </ul>
+          <span class="more-rebo">全部 ＞</span>
+        </div>
+
+        <div class="panel-content  rebocontent">
+          <ul>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img  class="da" src="./images/movie/m6.jpg">
+                  <div class="info da">
+                    <span>5月天偌亚方舟</span>
+                    <span>9.4</span>
+                  </div>   
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img src="./images/movie/m7.jpg">
+                  <div class="info">
+                    <span>厉鬼将映</span>
+                    <span>7.2</span>
+                  </div>   
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img src="./images/movie/m8.jpg">
+                  <div class="info">
+                    <span>唐人街探案</span>
+                    <span>9.0</span>
+                  </div>   
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img src="./images/m3.jpg">
+                  <div class="info">
+                    <span>八角笼中</span>
+                    <span>9.5</span>
+                  </div>   
+                </div>
+               
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img src="./images/m5.jpg">
+                  <div class="info">
+                    <span>长安三万里</span>
+                    <span>9.4</span>
+                  </div>   
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img src="./images/m6.jpg">
+                  <div class="info">
+                    <span>巨齿鲨2：深渊</span>
+                    <span>9.0</span>
+                  </div>   
+                </div>
+                
+              </div>
+            </li>
+            <li>
+              <div class="item">
+                <div class="poster">
+                  <img src="./images/mo8.jpg">
+                  <div class="info">
+                    <span>八角笼中</span>
+                    <span>9.5</span>
+                  </div>   
+                </div>
+               
+              </div>
+            </li>
+          </ul>
+      </div>
+      </div>
+
+    </div>
+      <!-- 主体左半部分，end -->
+
+      <!-- 主体右半部分，start -->
+      <div class="right">
+        <h1>今日票房</h1>
+        <div class="BoxOffice">
+          <ul>
+            <li>
+              <div class="dis">
+                <span><i class="red">1</i>孤注一掷</span>
+                <span >5340.12万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/movie/h1.jpeg">
+                <p>影片讲述了张艺兴所饰演的程序员潘生、金晨所饰演的模特安娜因看似条件优渥的工作机会决定出境淘金，却意外卷入网络骗局的故事。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i class="red">2</i>封神第一部</span>
+                <span>1478.61万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m1.jpg">
+                <p>该片取材于中国古典神魔小说名著《封神演义》，讲述了商王殷寿（费翔 饰）与狐妖妲己（娜然 饰）勾结，暴虐无道，引发天谴。昆仑仙人姜子牙（黄渤 饰）携“封神榜”下山，寻找天下共主，以救苍生。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i class="red">3</i>巨齿鲨2：深渊</span>
+                <span>756.31万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m6.jpg">
+                <p>主要讲述了一支海底探险小队穿越温跃层,潜入史前海底世界的故事,他们不仅要面对体型庞大、攻击力强悍的巨齿鲨群,还要应付更多前所未见的远古怪兽群的四面伏击。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>4</i>热烈</span>
+                <span>522.40万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m4.jpg">
+                <p>讲述了坚持着自己梦想的陈烁在偶然间遇到了人生伯乐丁雷，在重重困难中，两人带领团队突破难关并最终奔向共目标的故事。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>5</i>长安三万里</span>
+                <span>410万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m5.jpg">
+                <p>本片以唐代历史为背景，讲述在安史之乱爆发后数年，吐蕃大军攻打西南。 大唐节度使高适交战不利，长安岌岌可危。 困守孤城的高适向监军太监回忆起自己与李白的一生往事。 进而展现壮美的大唐盛景和高适、李白、杜甫等诗人们的豪情壮志以及唐诗流传千年的经典魅力。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>6</i>八角笼中</span>
+                <span>356万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m5.jpg">
+                <p>本片以唐代历史为背景，讲述在安史之乱爆发后数年，吐蕃大军攻打西南。 大唐节度使高适交战不利，长安岌岌可危。 困守孤城的高适向监军太监回忆起自己与李白的一生往事。 进而展现壮美的大唐盛景和高适、李白、杜甫等诗人们的豪情壮志以及唐诗流传千年的经典魅力。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>7</i>茶啊二中</span>
+                <span>522万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m4.jpg">
+                <p>讲述了坚持着自己梦想在重重困难中，两人带领团队突破难关并最终奔向共目标的故事。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>8</i>芭比</span>
+                <span>522.40万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m4.jpg">
+                <p>讲述了坚持着自己梦想的陈烁在偶然间遇到了人生伯乐丁雷，难关并最终奔向共目标的故事。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>9</i>暗杀风暴</span>
+                <span>522.40万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m4.jpg">
+                <p>讲述了坚持着自己梦想的陈烁在偶然间遇到了人生伯乐丁雷，在重重困难中，两人带领团队突破难关并最终奔向共目标的故事。</p>
+              </div>
+            </li>
+            <li>
+              <div class="dis">
+                <span><i>10</i>消失的她</span>
+                <span>50万</span>
+              </div>
+              <div class="hid">
+                <img src="./images/m4.jpg">
+                <p>讲述了坚持着自己梦想的陈烁在偶然间遇到了人生伯乐丁雷，在重重困难中，两人带领团队突破难关并最终奔向共目标的故事。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- 票房-end -->
+
+
+        <div class="market">
+          <h3>今日大盘</h3>
+          <div class="market-hd">
+            <span>
+              <p>2585.8万</p>
+            </span>
+            <span>
+              <a class="more">查看更多＞</a>
+            </span>
+          </div>
+          <div id="bj-time">
+          </div>
+        </div>
+        <!-- 今日大盘-end -->
+
+        <div class="ShadowMan">
+          <h1>热门影人</h1>
+          <div class="manlist">
+            <ul>
+              <li>
+                <div class="thumb">
+                  <a><i>1</i><img src="./images/movie/m9.jpg"></a>
+                  <span>黄渤</span>
+                </div>
+              </li>
+              <li>
+                <i class="red">2</i>
+                <a>宋祖儿</a>
+              </li>
+              <li>
+                <i class="red">3</i>
+                <a>周也</a>
+              </li>
+              <li>
+                <i>4</i>
+                <a>易烊千玺</a>
+              </li>
+              <li>
+                <i>5</i>
+                <a>刘浩存</a>
+              </li>
+              <li>
+                <i>6</i>
+                <a>杨超越</a>
+              </li>
+              <li>
+                <i>7</i>
+                <a>刘德华</a>
+              </li>
+              <li>
+                <i>8</i>
+                <a>杨洋</a>
+              </li>
+              <li>
+                <i>9</i>
+                <a>迪丽热巴</a>
+              </li>
+              <li>
+                <i>10</i>
+                <a>成毅</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 影人-end -->
+
+
+      </div>
+      <!-- 右半部分-end -->
+  </div>
+  <script>
+    let onav=document.getElementsByClassName("BoxOffice");
+    let oli=onav[0].getElementsByTagName("li");
+    let omain=document.getElementsByClassName("hid");
+    
+    for(var i=0;i<oli.length;i++){
+      oli[i].index=i;
+      oli[i].onmouseover=function(){
+        omain[this.index].style.display="block";
+      }
+      oli[i].onmouseout=function(){
+        omain[this.index].style.display="none";
+      }
+    }
+      // 图片显示与隐藏-end--------------------------------------------------
+
+      function displayBeijingTime() {
+        // 获取当前本地时间
+        var localTime = new Date();
+        
+        // 获取 UTC 时间偏移量，并转换为北京时间
+        var offset = localTime.getTimezoneOffset();
+        var beijingTime = new Date(localTime.getTime() + offset * 60 * 1000 + 8 * 60 * 60 * 1000);
+
+        // 格式化北京时间
+        var hours = beijingTime.getHours();
+        var minutes = beijingTime.getMinutes();
+        var seconds = beijingTime.getSeconds();
+        var timeString = hours + ":" + minutes + ":" + seconds;
+
+        // 在页面上显示北京时间
+        var timeElement = document.getElementById("bj-time");
+        timeElement.innerHTML = timeString;
+
+        // 每秒更新时间
+        setTimeout(displayBeijingTime, 1000);
+      }
+
+    
+  </script>
+
+<!-- 底部 -->
+<div class="clear"></div>
+<div class="footer">
+  <div class="clear"></div>
+  <p align="center" class="padding-top">Copyright  2015-2020  Q- Walking Fashion E&S 漫步时尚广场（QST教育）版权所有<Br/>
+    中国青岛 高新区河东路8888号  青软教育集团    咨询热线：400-658-0166  400-658-1022 </p>
+  <p align="center"><img src="images/foot_pic.jpg"></p>
+  <div class="clear"></div>
+</div>
+</body>
+</html>

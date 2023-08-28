@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>漫步时尚广场注册页面</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/register.css" />
+	</head>
+	<body>
+		<!-- 头部 start -->
+		<div class="header container clearfix">
+			<div class="logo leftfix">
+				<img src="./img/register_logo.jpg" alt="">
+			</div>
+			<div class="welcome leftfix">
+				欢迎注册！
+			</div>
+			<div class="login rightfix">
+				已有账号？&nbsp;
+				<a href="login.html">请登录</a>
+			</div>
+		</div>
+		<!-- 头部 end -->
+		<!-- 分步注册 start -->
+		<div class="step-container">
+		    <div class="step step1 active">
+				<!-- 指示 -->
+				<div class="indicate">
+					<img src="./img/1_round_solid.png" alt="">
+					<img src="./img/jiantou.png" alt="">
+					<img src="./img/jiantou.png" alt="">
+					<img src="./img/jiantou.png" alt="">
+					<img src="./img/2_round.png" alt="">
+					<img src="./img/jiantou.png" alt="">
+					<img src="./img/jiantou.png" alt="">
+					<img src="./img/jiantou.png" alt="">
+					<img src="./img/3_round.png" alt="">
+				</div>
+				<div class="describe">
+					<h2 style="color: #4472c4;">输入基本信息</h2>
+					<h2>输入详细信息</h2>
+					<h2>完成注册</h2>
+				</div>
+		        <input type="text" placeholder="用户名">
+		        <input type="password" placeholder="密码">
+		        <button onclick="nextStep(2)">下一步</button>
+		    </div>
+		    <div class="step step2">
+		        <!-- 指示 -->
+		        <div class="indicate">
+		        	<img src="./img/1_round.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/2_round_solid.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/3_round.png" alt="">
+		        </div>
+		        <div class="describe">
+		        	<h2 >输入基本信息</h2>
+		        	<h2 style="color: #4472c4;">输入详细信息</h2>
+		        	<h2>完成注册</h2>
+		        </div>
+		        <input type="email" placeholder="邮箱">
+		        <input type="tel" placeholder="手机号">
+				<div class="clearfix upAndDown">
+					<button onclick="nextStep(1)" class="leftfix">上一步</button>
+					<button onclick="nextStep(3)" class="rightfix">下一步</button>
+				</div>
+		    </div>
+		    <div class="step step3">
+		        <!-- 指示 -->
+		        <div class="indicate">
+		        	<img src="./img/1_round.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/2_round.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/jiantou.png" alt="">
+		        	<img src="./img/3_round_solid.png" alt="">
+		        </div>
+		        <div class="describe">
+		        	<h2 >输入基本信息</h2>
+		        	<h2 >输入详细信息</h2>
+		        	<h2 style="color: #4472c4;">完成注册</h2>
+		        </div>
+		        <p>恭喜您完成注册！</p>
+		    </div>
+		</div>
+		<!-- 分步注册 end -->
+		
+		<!-- 页脚 start -->
+		<div class="footer">
+			Copyright 2015-2020 Q- Walking Fashion E&S漫步时尚广场(QST教育）版权所有
+		</div>
+		<!-- 页脚 end -->
+		<script>
+		    function nextStep(step) {
+		        const steps = document.querySelectorAll('.step');
+		        steps.forEach(s => s.classList.remove('active'));
+		        steps[step - 1].classList.add('active');
+		    }
+		</script>
+	</body>
+</html>
